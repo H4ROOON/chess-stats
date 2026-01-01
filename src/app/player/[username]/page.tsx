@@ -89,7 +89,7 @@ export default async function PlayerPage({ params }: PageProps) {
   const countryCode = profile.country.split("/").pop()?.toLowerCase();
 
   return (
-    <main className="min-h-screen bg-white text-black p-6 flex flex-col items-center pt-10">
+    <main className="min-h-screen bg-slate-900 text-black p-6 flex flex-col items-center pt-10">
       <div className="w-full max-w-md mb-8">
         <ChessSearch />
       </div>
@@ -150,9 +150,9 @@ export default async function PlayerPage({ params }: PageProps) {
       </div>
 
       <div className="w-full max-w-md">
-        <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+        <h3 className="text-xl text-white font-bold mb-4 flex items-center gap-2">
           Recent Matches{" "}
-          <span className="text-xs font-normal text-gray-500">(Last 5)</span>
+          <span className="text-xs font-normal text-gray-300">(Last 5)</span>
         </h3>
 
         <div className="space-y-3">

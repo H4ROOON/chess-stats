@@ -1,4 +1,5 @@
 import ChessSearch from "@/components/ChessSearch";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,6 +21,14 @@ export default function Home() {
       </div>
 
       <ChessSearch />
+      <div className="mt-12 flex gap-4">
+        <Link
+          href="/champions"
+          className="text-gray-400 hover:text-white transition text-sm flex items-center gap-2"
+        >
+          🏆 View Hall of Fame
+        </Link>
+      </div>
     </main>
   );
 }
