@@ -190,7 +190,7 @@ export default async function PlayerPage({ params }: PageProps) {
           })}
 
           {gamesData.length === 0 && (
-            <p className="text-gray-500 text-center py-4 text-sm bg-gray-50 rounded-lg border border-dashed border-gray-300">
+            <p className="text-gray-900 text-center py-4 text-sm bg-gray-400 rounded-lg border border-dashed border-gray-300">
               No games played this month.
             </p>
           )}

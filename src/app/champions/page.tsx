@@ -272,11 +272,7 @@ export default function ChampionsPage() {
         ))}
         <Link
           href="/"
-          style={{
-            color: "#aaa",
-            textDecoration: "none",
-            borderBottom: "1px solid #aaa",
-          }}
+          className="text-[#aaa] no-underline hover:text-green-500 transition-colors"
         >
           ← Back to Search
         </Link>

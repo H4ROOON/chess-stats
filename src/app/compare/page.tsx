@@ -86,13 +86,13 @@ export default function ComparePage() {
         ⚔️ <span className="text-green-500">Head-to-Head</span>
       </h1>
 
-      <div className="flex flex-col md:flex-row gap-4 mb-8 w-full max-w-2xl bg-gray-900 p-6 rounded-2xl border border-gray-800">
+      <div className="flex flex-col md:flex-row gap-4 mb-8 w-full max-w-2xl bg-gray-900 p-6 rounded-2xl border border-green-500">
         <input
           type="text"
           placeholder="Player 1 (e.g. Hikaru)"
           value={player1}
           onChange={(e) => setPlayer1(e.target.value)}
-          className="bg-black border border-[#333] p-3 rounded-lg text-white w-full focus:outline-none focus:border-purple-500 transition"
+          className="bg-black border border-[#333] p-3 rounded-lg text-white w-full focus:outline-none focus:border-green-500 transition"
         />
         <div className="flex items-center justify-center font-bold text-[#555]">
           VS
@@ -102,7 +102,7 @@ export default function ComparePage() {
           placeholder="Player 2 (e.g. MagnusCarlsen)"
           value={player2}
           onChange={(e) => setPlayer2(e.target.value)}
-          className="bg-black border border-[#333] p-3 rounded-lg text-white w-full focus:outline-none focus:border-purple-500 transition"
+          className="bg-black border border-[#333] p-3 rounded-lg text-white w-full focus:outline-none focus:border-green-500 transition"
         />
         <button
           onClick={handleCompare}
@@ -218,7 +218,7 @@ export default function ComparePage() {
 
       <Link
         href="/"
-        className="mt-12 text-gray-500 hover:text-white transition"
+        className="mt-12 text-gray-500 hover:text-green-500 transition"
       >
         ← Back Home
       </Link>

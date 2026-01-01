@@ -11,7 +11,7 @@ export default function Home() {
         <h1 className="text-6xl font-extrabold tracking-tight">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">
             Chess
-          </span>
+          </span>{" "}
           Stats
         </h1>
         <p className="text-gray-400 text-lg max-w-lg mx-auto">
@@ -24,9 +24,15 @@ export default function Home() {
       <div className="mt-12 flex gap-4">
         <Link
           href="/champions"
-          className="text-gray-400 hover:text-white transition text-sm flex items-center gap-2"
+          className="text-gray-400 hover:text-green-500 transition text-sm flex items-center gap-2"
         >
           🏆 View Hall of Fame
+        </Link>
+        <Link
+          href="/compare"
+          className="text-gray-400 hover:text-green-500 transition text-sm flex items-center gap-2"
+        >
+          ⚔️ Compare Players
         </Link>
       </div>
     </main>
