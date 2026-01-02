@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chess Stats App
 
-## Getting Started
+A real-time chess analytics dashboard built with Next.js 15 and Tailwind CSS. Search for any user on Chess.com, compare players, and explore the history of World Champions.
 
-First, run the development server:
+[Live Preview:](https://haroon-chess-stats.vercel.app/)
+
+---
+
+## Features
+
+-Live Player Search — fetches public player data from the Chess.com API.
+-Interactive stats — visual breakdown of Rapid, Blitz, and Bullet ratings.
+-Head-to-Head — compare two players side-by-side.
+-Hall of Fame — curated World Champions section with historical data.
+-Dark Mode — comfortable, consistent UI for long analysis sessions.
+-TypeScript + server components for a modern DX and small client bundles.
+
+## Tech stack
+
+- Framework: Next.js 15 (App Router)
+- Styling: Tailwind CSS v4
+- Language: TypeScript
+- API: Chess.com Public API (no auth required)
+- Deployment: Vercel
+
+## Prerequisites
+
+- Node.js 18+ (recommended)
+- npm (or yarn/pnpm — update commands accordingly)
+
+## Quick start
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/chess-stats.git
+cd chess-stats
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 (or the URL printed by Next) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available scripts
 
-## Learn More
+Assumes package.json scripts like typical Next.js + TypeScript projects. Adjust if yours differ.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+npm run typecheck
+npm run format
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This matches your current layout — update paths & files as your code evolves.
 
-## Deploy on Vercel
+```
+.chess/
+├─ .next/
+├─ node_modules/
+├─ public/
+│  ├─ champions/
+│  ├─ file.svg
+│  ├─ globe.svg
+│  ├─ next.svg
+│  ├─ vercel.svg
+│  ├─ window.svg
+│  └─ favicon.ico
+├─ src/
+│  ├─ app/
+│  │  ├─ champions/
+│  │  │  └─ page.tsx
+│  │  ├─ compare/
+│  │  │  └─ page.tsx
+│  │  ├─ player/
+│  │  │  └─ [username]/
+│  │  │     ├─ loading.tsx
+│  │  │     ├─ page.tsx
+│  │  ├─ globals.css
+│  │  ├─ layout.tsx
+│  │  └─ page.tsx
+│  ├─ components/
+├─ .gitignore
+├─ next-env.d.ts
+├─ next.config.ts
+├─ package.json
+├─ postcss.config.mjs
+├─ tailwind.config.js
+├─ tsconfig.json
+└─ README.md
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository.
+2. Create a branch: `git checkout -b feat/your-feature`
+3. Implement changes, add tests where relevant.
+4. Run linters & type checks:
+   ```bash
+   npm run lint
+   npm run typecheck
+   ```
+5. Commit and open a pull request with a clear description and screenshots/GIFs for UI changes.
+
+## License & attribution
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+## Owner / Maintainer:
+
+## @H4ROOON
