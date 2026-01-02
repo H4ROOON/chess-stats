@@ -83,7 +83,7 @@ export default function ComparePage() {
   return (
     <main className="min-h-screen bg-black text-white p-6 flex flex-col items-center">
       <h1 className="text-4xl font-bold mb-8 flex items-center gap-3">
-        ⚔️ <span className="text-green-500">Head-to-Head</span>
+        <span className="text-green-500">Compare Two Players</span>
       </h1>
 
       <div className="flex flex-col md:flex-row gap-4 mb-8 w-full max-w-2xl bg-gray-900 p-6 rounded-2xl border border-green-500">
@@ -109,7 +109,7 @@ export default function ComparePage() {
           disabled={loading}
           className="bg-green-500 hover:bg-green-900 disabled:opacity-50 text-white font-bold py-3 px-6 rounded-lg transition"
         >
-          {loading ? "..." : "Fight!"}
+          {loading ? "..." : "Compare"}
         </button>
       </div>
 

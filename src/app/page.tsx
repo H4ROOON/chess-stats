@@ -26,13 +26,13 @@ export default function Home() {
           href="/champions"
           className="text-gray-400 hover:text-green-500 transition text-sm flex items-center gap-2"
         >
-          🏆 View Hall of Fame
+          View Hall of Fame
         </Link>
         <Link
           href="/compare"
           className="text-gray-400 hover:text-green-500 transition text-sm flex items-center gap-2"
         >
-          ⚔️ Compare Players
+          Compare Players
         </Link>
       </div>
     </main>

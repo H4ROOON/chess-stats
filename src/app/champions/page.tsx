@@ -176,7 +176,7 @@ export default function ChampionsPage() {
         <h1
           style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "20px" }}
         >
-          Hall of <span style={{ color: "#22c55e" }}>Fame</span> 🏆
+          Hall of <span style={{ color: "#22c55e" }}>Fame</span>
         </h1>
       </div>
 
